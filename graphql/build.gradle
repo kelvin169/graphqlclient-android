@@ -23,12 +23,12 @@ android {
 
     publish {
         groupId = 'com.androidstudy'
-        artifactId = 'sms-verifier'
+        artifactId = 'graphql'
         publishVersion = '0.0.1'
-        desc = 'Android library for phone number verification feature in your app. Automatically copies verification code from SMS right into the app.'
+        desc = 'GraphQL client for Android, Open Sourced from our Twiga Foods Android Team '
         licences = ['Apache-2.0']
-        repoName ='android-sms-verifier'
-        website = 'https://github.com/AndroidStudyOpenSource/android-sms-verifier'
+        repoName ='graphql'
+        website = 'https://github.com/AndroidStudyOpenSource/graphqlclient-android'
     }
 
 }
