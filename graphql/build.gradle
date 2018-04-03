@@ -1,9 +1,8 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 27
-
-
 
     defaultConfig {
         minSdkVersion 16
@@ -20,6 +19,16 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
+    }
+
+    publish {
+        groupId = 'com.androidstudy'
+        artifactId = 'sms-verifier'
+        publishVersion = '0.0.1'
+        desc = 'Android library for phone number verification feature in your app. Automatically copies verification code from SMS right into the app.'
+        licences = ['Apache-2.0']
+        repoName ='android-sms-verifier'
+        website = 'https://github.com/AndroidStudyOpenSource/android-sms-verifier'
     }
 
 }
